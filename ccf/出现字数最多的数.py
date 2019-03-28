@@ -23,22 +23,21 @@
 ---------------------
 """
 
+
+
 if __name__ == '__main__':
     n = eval(input())
-    exam_list = list(map(int, input().split()))
-    # tem_list = []
-    # max_num_item = exam_list[0]
-    # for i in range(n):
-    #     if exam_list[i] not in tem_list:
-    #         tem_list.append(exam_list[i])
-    #         if exam_list.count(exam_list[i]) > exam_list.count(max_num_item):
-    #             max_num_item = exam_list[i]
-    #     else:
-    #         continue
-    b = list(set(exam_list))
-    b.sort()
-    s = dict(zip(b, map(exam_list.count, b)))
-    print('s=', s)
-    print(max(s, key=s.get))
-    print(max(s.values()))
+    e_list = list(map(int, input().split()))
+    b = list(set(e_list))
+    c = dict(zip(b, map(e_list.count, b)))
+    print(max(c, key=c.get))
+    # print(b)
+    # n = eval(input())
+    # exam_list = list(map(int, input().split()))
+    # b = list(set(exam_list))
+    # b.sort()
+    # s = dict(zip(b, map(exam_list.count, b)))
+    # print('s=', s)
+    # print(max(s, key=s.get))
+    # print(max(s.values()))
 

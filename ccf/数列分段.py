@@ -30,14 +30,23 @@
 　　1 ≤ n ≤ 1000，0 ≤ ai ≤ 1000。
 ---------------------
 """
+import time
 
 if __name__ == '__main__':
-    n = eval(input())
-    exam_list = list(map(int, input().split()))
-    count = 1
-    last = exam_list[0]
-    for i in exam_list:
-        if last != i:
-            count += 1
-        last = i
-    print(count)
+    # n = eval(input())
+    # exam_list = list(map(int, input().split()))
+    # count = 1
+    # last = exam_list[0]
+    # for i in exam_list:
+    #     if last != i:
+    #         count += 1
+    #     last = i
+    # print(count)
+    start = time.clock()
+    sum = 0
+    for i in range(100000):
+        sum += i
+    print(sum)
+    end = time.clock()
+    print('runing time: %s ms', (end - start)*1000)
+
